@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LookieCookie Panel</title>
+    <link rel="stylesheet" href="panel.css" />
+  </head>
+  <body>
+    <header class="panel-header">
+      <div>
+        <h1>LookieCookie</h1>
+        <p>Auto-tracking cookies for this tab.</p>
+      </div>
+      <div class="actions">
+        <div class="summary-inline">
+          <div>
+            <span class="label">Cookies</span>
+            <strong id="cookieCount">0</strong>
+          </div>
+          <div>
+            <span class="label">Last update</span>
+            <strong id="lastUpdate">—</strong>
+          </div>
+        </div>
+        <button id="refreshButton" type="button">Refresh</button>
+        <button id="donateButton" type="button">Donate</button>
+      </div>
+    </header>
+
+    <section class="layout">
+      <div class="list-panel">
+        <div class="list-header">
+          <span>Name</span>
+          <span>Domain</span>
+          <span>Format</span>
+          <span>Changed</span>
+        </div>
+        <div id="cookieList" class="list-body"></div>
+      </div>
+      <div class="detail-panel">
+        <div class="detail-header">
+          <div>
+            <h2 id="detailTitle">Select a cookie</h2>
+            <span id="detailMeta">—</span>
+          </div>
+          <div class="detail-actions" id="proSection">
+            <button id="exportJson" type="button">Export JSON</button>
+            <button id="exportCsv" type="button">Export CSV</button>
+          </div>
+        </div>
+        
+        <div class="detail-content">
+          <div class="detail-top">
+            <details class="detail-section compact" open>
+              <summary>Info</summary>
+              <div id="detailInfo" class="detail-info"></div>
+              <div id="detailUrl" class="detail-url-inline">—</div>
+            </details>
+            
+            <details class="detail-section compact">
+              <summary>Raw value</summary>
+              <pre id="detailRaw" class="detail-raw-value">—</pre>
+            </details>
+          </div>
+          
+          <div class="detail-current">
+            <div class="section-header">
+              <span>Current Value</span>
+              <div class="current-controls">
+                <span class="change-indicator" id="changeIndicator"></span>
+                <button id="toggleDiffBtn" type="button" class="toggle-btn" title="Toggle diff/full view">Diff</button>
+              </div>
+            </div>
+            <div id="detailCurrentDiff" class="current-diff"></div>
+          </div>
+          
+          <div class="detail-history-section">
+            <div class="section-header">
+              <span>History</span>
+              <div class="history-controls">
+                <span class="history-count" id="historyCount">0 changes</span>
+                <button id="clearHistoryBtn" type="button" class="clear-btn" title="Clear history for this cookie">Clear</button>
+              </div>
+            </div>
+            <div id="detailHistory" class="history-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="permissionModal" class="permission-modal hidden" role="dialog" aria-modal="true">
+      <div class="permission-card">
+        <h3>Site access required</h3>
+        <p id="permissionMessage">
+          Grant site access to read cookies for this tab.
+        </p>
+        <div class="permission-actions">
+          <button id="permissionGrantButton" type="button">Grant access</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="browser.js" type="module"></script>
+    <script src="panel.js" type="module"></script>
+  </body>
+</html>

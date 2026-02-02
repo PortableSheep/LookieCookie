@@ -1,0 +1,14 @@
+{
+  "name": "lookiecookie",
+  "private": true,
+  "version": "0.1.1",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "package": "node scripts/package.mjs",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  }
+}
