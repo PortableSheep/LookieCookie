@@ -1,6 +1,6 @@
 {
   "name": "LookieCookie",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Watch a cookie, auto-decode its value, and track changes for debugging.",
   "devtools_page": "devtools.html",
   "icons": {

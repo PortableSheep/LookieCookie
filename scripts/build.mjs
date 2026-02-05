@@ -6,6 +6,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SHARED_DIR = path.join(ROOT, "shared");
 const CHROME_DIR = path.join(ROOT, "chrome");
 const FIREFOX_DIR = path.join(ROOT, "firefox");
+const SAFARI_DIR = path.join(ROOT, "safari");
 const ROOT_ICONS_DIR = path.join(ROOT, "icons");
 const DIST_DIR = path.join(ROOT, "dist");
 
@@ -160,8 +161,8 @@ const buildBrowser = async (browserName, browserDir) => {
   await copyShared(outDir);
   await copyBrowserSpecificFiles(browserDir, outDir);
   await buildBackgroundScript(browserDir, outDir);
-  // Copy PNG icons from root for Chrome
-  if (browserName === "chrome") {
+  // Copy PNG icons from root for Chrome and Safari (Manifest V3)
+  if (browserName === "chrome" || browserName === "safari") {
     await copyRootIcons(outDir);
   }
   await buildManifest(browserDir, outDir);
@@ -174,9 +175,10 @@ const main = async () => {
   await Promise.all([
     buildBrowser("chrome", CHROME_DIR),
     buildBrowser("firefox", FIREFOX_DIR),
+    buildBrowser("safari", SAFARI_DIR),
   ]);
 
-  console.log("Built dist/chrome and dist/firefox from shared sources.");
+  console.log("Built dist/chrome, dist/firefox, and dist/safari from shared sources.");
 };
 
 main().catch((error) => {

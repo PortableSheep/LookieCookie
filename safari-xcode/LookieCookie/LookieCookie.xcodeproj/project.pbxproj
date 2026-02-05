@@ -1,0 +1,1011 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3201D192F343F2C00F61DE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3201D182F343F2C00F61DE9 /* AppDelegate.swift */; };
+		F3201D1B2F343F2C00F61DE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3201D1A2F343F2C00F61DE9 /* SceneDelegate.swift */; };
+		F3201D1E2F343F2C00F61DE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3201D1C2F343F2C00F61DE9 /* LaunchScreen.storyboard */; };
+		F3201D212F343F2C00F61DE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3201D1F2F343F2C00F61DE9 /* Main.storyboard */; };
+		F3201D2A2F343F2C00F61DE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3201D292F343F2C00F61DE9 /* AppDelegate.swift */; };
+		F3201D2D2F343F2C00F61DE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3201D2B2F343F2C00F61DE9 /* Main.storyboard */; };
+		F3201D342F343F2C00F61DE9 /* LookieCookie Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F3201D332F343F2C00F61DE9 /* LookieCookie Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3201D3E2F343F2C00F61DE9 /* LookieCookie Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F3201D3D2F343F2C00F61DE9 /* LookieCookie Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F3201D432F343F2C00F61DE9 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = F3201D082F343F2B00F61DE9 /* Main.html */; };
+		F3201D442F343F2C00F61DE9 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = F3201D082F343F2B00F61DE9 /* Main.html */; };
+		F3201D452F343F2C00F61DE9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F3201D0A2F343F2B00F61DE9 /* Icon.png */; };
+		F3201D462F343F2C00F61DE9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F3201D0A2F343F2B00F61DE9 /* Icon.png */; };
+		F3201D472F343F2C00F61DE9 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = F3201D0B2F343F2B00F61DE9 /* Style.css */; };
+		F3201D482F343F2C00F61DE9 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = F3201D0B2F343F2B00F61DE9 /* Style.css */; };
+		F3201D492F343F2C00F61DE9 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = F3201D0C2F343F2B00F61DE9 /* Script.js */; };
+		F3201D4A2F343F2C00F61DE9 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = F3201D0C2F343F2B00F61DE9 /* Script.js */; };
+		F3201D4B2F343F2C00F61DE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3201D0D2F343F2B00F61DE9 /* ViewController.swift */; };
+		F3201D4C2F343F2C00F61DE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3201D0D2F343F2B00F61DE9 /* ViewController.swift */; };
+		F3201D4D2F343F2C00F61DE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3201D0E2F343F2C00F61DE9 /* Assets.xcassets */; };
+		F3201D4E2F343F2C00F61DE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3201D0E2F343F2C00F61DE9 /* Assets.xcassets */; };
+		F3201D4F2F343F2C00F61DE9 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3201D102F343F2C00F61DE9 /* SafariWebExtensionHandler.swift */; };
+		F3201D502F343F2C00F61DE9 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3201D102F343F2C00F61DE9 /* SafariWebExtensionHandler.swift */; };
+		F3201D6B2F343F2C00F61DE9 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = F3201D622F343F2C00F61DE9 /* background.js */; };
+		F3201D6C2F343F2C00F61DE9 /* devtools.html in Resources */ = {isa = PBXBuildFile; fileRef = F3201D632F343F2C00F61DE9 /* devtools.html */; };
+		F3201D6D2F343F2C00F61DE9 /* panel.js in Resources */ = {isa = PBXBuildFile; fileRef = F3201D642F343F2C00F61DE9 /* panel.js */; };
+		F3201D6E2F343F2C00F61DE9 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = F3201D652F343F2C00F61DE9 /* icons */; };
+		F3201D6F2F343F2C00F61DE9 /* panel.html in Resources */ = {isa = PBXBuildFile; fileRef = F3201D662F343F2C00F61DE9 /* panel.html */; };
+		F3201D702F343F2C00F61DE9 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F3201D672F343F2C00F61DE9 /* manifest.json */; };
+		F3201D712F343F2C00F61DE9 /* devtools.js in Resources */ = {isa = PBXBuildFile; fileRef = F3201D682F343F2C00F61DE9 /* devtools.js */; };
+		F3201D722F343F2C00F61DE9 /* browser.js in Resources */ = {isa = PBXBuildFile; fileRef = F3201D692F343F2C00F61DE9 /* browser.js */; };
+		F3201D732F343F2C00F61DE9 /* panel.css in Resources */ = {isa = PBXBuildFile; fileRef = F3201D6A2F343F2C00F61DE9 /* panel.css */; };
+		F3201D742F343F2C00F61DE9 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = F3201D622F343F2C00F61DE9 /* background.js */; };
+		F3201D752F343F2C00F61DE9 /* devtools.html in Resources */ = {isa = PBXBuildFile; fileRef = F3201D632F343F2C00F61DE9 /* devtools.html */; };
+		F3201D762F343F2C00F61DE9 /* panel.js in Resources */ = {isa = PBXBuildFile; fileRef = F3201D642F343F2C00F61DE9 /* panel.js */; };
+		F3201D772F343F2C00F61DE9 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = F3201D652F343F2C00F61DE9 /* icons */; };
+		F3201D782F343F2C00F61DE9 /* panel.html in Resources */ = {isa = PBXBuildFile; fileRef = F3201D662F343F2C00F61DE9 /* panel.html */; };
+		F3201D792F343F2C00F61DE9 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = F3201D672F343F2C00F61DE9 /* manifest.json */; };
+		F3201D7A2F343F2C00F61DE9 /* devtools.js in Resources */ = {isa = PBXBuildFile; fileRef = F3201D682F343F2C00F61DE9 /* devtools.js */; };
+		F3201D7B2F343F2C00F61DE9 /* browser.js in Resources */ = {isa = PBXBuildFile; fileRef = F3201D692F343F2C00F61DE9 /* browser.js */; };
+		F3201D7C2F343F2C00F61DE9 /* panel.css in Resources */ = {isa = PBXBuildFile; fileRef = F3201D6A2F343F2C00F61DE9 /* panel.css */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3201D352F343F2C00F61DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3201D022F343F2B00F61DE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3201D322F343F2C00F61DE9;
+			remoteInfo = "LookieCookie Extension (iOS)";
+		};
+		F3201D3F2F343F2C00F61DE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3201D022F343F2B00F61DE9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3201D3C2F343F2C00F61DE9;
+			remoteInfo = "LookieCookie Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3201D562F343F2C00F61DE9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F3201D342F343F2C00F61DE9 /* LookieCookie Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3201D5D2F343F2C00F61DE9 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F3201D3E2F343F2C00F61DE9 /* LookieCookie Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F3201D092F343F2B00F61DE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		F3201D0A2F343F2B00F61DE9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		F3201D0B2F343F2B00F61DE9 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		F3201D0C2F343F2B00F61DE9 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		F3201D0D2F343F2B00F61DE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3201D0E2F343F2C00F61DE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3201D102F343F2C00F61DE9 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		F3201D152F343F2C00F61DE9 /* LookieCookie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookieCookie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3201D182F343F2C00F61DE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3201D1A2F343F2C00F61DE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F3201D1D2F343F2C00F61DE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3201D202F343F2C00F61DE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3201D222F343F2C00F61DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3201D272F343F2C00F61DE9 /* LookieCookie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LookieCookie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3201D292F343F2C00F61DE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3201D2C2F343F2C00F61DE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3201D2E2F343F2C00F61DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3201D332F343F2C00F61DE9 /* LookieCookie Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LookieCookie Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3201D382F343F2C00F61DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3201D3D2F343F2C00F61DE9 /* LookieCookie Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "LookieCookie Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3201D422F343F2C00F61DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3201D622F343F2C00F61DE9 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../../dist/safari/background.js; sourceTree = "<group>"; };
+		F3201D632F343F2C00F61DE9 /* devtools.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = devtools.html; path = ../../../dist/safari/devtools.html; sourceTree = "<group>"; };
+		F3201D642F343F2C00F61DE9 /* panel.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = panel.js; path = ../../../dist/safari/panel.js; sourceTree = "<group>"; };
+		F3201D652F343F2C00F61DE9 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../dist/safari/icons; sourceTree = "<group>"; };
+		F3201D662F343F2C00F61DE9 /* panel.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = panel.html; path = ../../../dist/safari/panel.html; sourceTree = "<group>"; };
+		F3201D672F343F2C00F61DE9 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../dist/safari/manifest.json; sourceTree = "<group>"; };
+		F3201D682F343F2C00F61DE9 /* devtools.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = devtools.js; path = ../../../dist/safari/devtools.js; sourceTree = "<group>"; };
+		F3201D692F343F2C00F61DE9 /* browser.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = browser.js; path = ../../../dist/safari/browser.js; sourceTree = "<group>"; };
+		F3201D6A2F343F2C00F61DE9 /* panel.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = panel.css; path = ../../../dist/safari/panel.css; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3201D122F343F2C00F61DE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3201D242F343F2C00F61DE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3201D302F343F2C00F61DE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3201D3A2F343F2C00F61DE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3201D012F343F2B00F61DE9 = {
+			isa = PBXGroup;
+			children = (
+				F3201D062F343F2B00F61DE9 /* Shared (App) */,
+				F3201D0F2F343F2C00F61DE9 /* Shared (Extension) */,
+				F3201D172F343F2C00F61DE9 /* iOS (App) */,
+				F3201D282F343F2C00F61DE9 /* macOS (App) */,
+				F3201D372F343F2C00F61DE9 /* iOS (Extension) */,
+				F3201D412F343F2C00F61DE9 /* macOS (Extension) */,
+				F3201D162F343F2C00F61DE9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3201D062F343F2B00F61DE9 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				F3201D0D2F343F2B00F61DE9 /* ViewController.swift */,
+				F3201D0E2F343F2C00F61DE9 /* Assets.xcassets */,
+				F3201D072F343F2B00F61DE9 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		F3201D072F343F2B00F61DE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3201D082F343F2B00F61DE9 /* Main.html */,
+				F3201D0A2F343F2B00F61DE9 /* Icon.png */,
+				F3201D0B2F343F2B00F61DE9 /* Style.css */,
+				F3201D0C2F343F2B00F61DE9 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F3201D0F2F343F2C00F61DE9 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				F3201D612F343F2C00F61DE9 /* Resources */,
+				F3201D102F343F2C00F61DE9 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		F3201D162F343F2C00F61DE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3201D152F343F2C00F61DE9 /* LookieCookie.app */,
+				F3201D272F343F2C00F61DE9 /* LookieCookie.app */,
+				F3201D332F343F2C00F61DE9 /* LookieCookie Extension.appex */,
+				F3201D3D2F343F2C00F61DE9 /* LookieCookie Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3201D172F343F2C00F61DE9 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				F3201D182F343F2C00F61DE9 /* AppDelegate.swift */,
+				F3201D1A2F343F2C00F61DE9 /* SceneDelegate.swift */,
+				F3201D1C2F343F2C00F61DE9 /* LaunchScreen.storyboard */,
+				F3201D1F2F343F2C00F61DE9 /* Main.storyboard */,
+				F3201D222F343F2C00F61DE9 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		F3201D282F343F2C00F61DE9 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				F3201D292F343F2C00F61DE9 /* AppDelegate.swift */,
+				F3201D2B2F343F2C00F61DE9 /* Main.storyboard */,
+				F3201D2E2F343F2C00F61DE9 /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		F3201D372F343F2C00F61DE9 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				F3201D382F343F2C00F61DE9 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		F3201D412F343F2C00F61DE9 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				F3201D422F343F2C00F61DE9 /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		F3201D612F343F2C00F61DE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3201D622F343F2C00F61DE9 /* background.js */,
+				F3201D632F343F2C00F61DE9 /* devtools.html */,
+				F3201D642F343F2C00F61DE9 /* panel.js */,
+				F3201D652F343F2C00F61DE9 /* icons */,
+				F3201D662F343F2C00F61DE9 /* panel.html */,
+				F3201D672F343F2C00F61DE9 /* manifest.json */,
+				F3201D682F343F2C00F61DE9 /* devtools.js */,
+				F3201D692F343F2C00F61DE9 /* browser.js */,
+				F3201D6A2F343F2C00F61DE9 /* panel.css */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3201D142F343F2C00F61DE9 /* LookieCookie (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3201D572F343F2C00F61DE9 /* Build configuration list for PBXNativeTarget "LookieCookie (iOS)" */;
+			buildPhases = (
+				F3201D112F343F2C00F61DE9 /* Sources */,
+				F3201D122F343F2C00F61DE9 /* Frameworks */,
+				F3201D132F343F2C00F61DE9 /* Resources */,
+				F3201D562F343F2C00F61DE9 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3201D362F343F2C00F61DE9 /* PBXTargetDependency */,
+			);
+			name = "LookieCookie (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "LookieCookie (iOS)";
+			productReference = F3201D152F343F2C00F61DE9 /* LookieCookie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3201D262F343F2C00F61DE9 /* LookieCookie (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3201D5E2F343F2C00F61DE9 /* Build configuration list for PBXNativeTarget "LookieCookie (macOS)" */;
+			buildPhases = (
+				F3201D232F343F2C00F61DE9 /* Sources */,
+				F3201D242F343F2C00F61DE9 /* Frameworks */,
+				F3201D252F343F2C00F61DE9 /* Resources */,
+				F3201D5D2F343F2C00F61DE9 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3201D402F343F2C00F61DE9 /* PBXTargetDependency */,
+			);
+			name = "LookieCookie (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "LookieCookie (macOS)";
+			productReference = F3201D272F343F2C00F61DE9 /* LookieCookie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3201D322F343F2C00F61DE9 /* LookieCookie Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3201D532F343F2C00F61DE9 /* Build configuration list for PBXNativeTarget "LookieCookie Extension (iOS)" */;
+			buildPhases = (
+				F3201D2F2F343F2C00F61DE9 /* Sources */,
+				F3201D302F343F2C00F61DE9 /* Frameworks */,
+				F3201D312F343F2C00F61DE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LookieCookie Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "LookieCookie Extension (iOS)";
+			productReference = F3201D332F343F2C00F61DE9 /* LookieCookie Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F3201D3C2F343F2C00F61DE9 /* LookieCookie Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3201D5A2F343F2C00F61DE9 /* Build configuration list for PBXNativeTarget "LookieCookie Extension (macOS)" */;
+			buildPhases = (
+				F3201D392F343F2C00F61DE9 /* Sources */,
+				F3201D3A2F343F2C00F61DE9 /* Frameworks */,
+				F3201D3B2F343F2C00F61DE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LookieCookie Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "LookieCookie Extension (macOS)";
+			productReference = F3201D3D2F343F2C00F61DE9 /* LookieCookie Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3201D022F343F2B00F61DE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					F3201D142F343F2C00F61DE9 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					F3201D262F343F2C00F61DE9 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					F3201D322F343F2C00F61DE9 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					F3201D3C2F343F2C00F61DE9 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+				};
+			};
+			buildConfigurationList = F3201D052F343F2B00F61DE9 /* Build configuration list for PBXProject "LookieCookie" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3201D012F343F2B00F61DE9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F3201D162F343F2C00F61DE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3201D142F343F2C00F61DE9 /* LookieCookie (iOS) */,
+				F3201D262F343F2C00F61DE9 /* LookieCookie (macOS) */,
+				F3201D322F343F2C00F61DE9 /* LookieCookie Extension (iOS) */,
+				F3201D3C2F343F2C00F61DE9 /* LookieCookie Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3201D132F343F2C00F61DE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3201D452F343F2C00F61DE9 /* Icon.png in Resources */,
+				F3201D1E2F343F2C00F61DE9 /* LaunchScreen.storyboard in Resources */,
+				F3201D432F343F2C00F61DE9 /* Main.html in Resources */,
+				F3201D492F343F2C00F61DE9 /* Script.js in Resources */,
+				F3201D4D2F343F2C00F61DE9 /* Assets.xcassets in Resources */,
+				F3201D212F343F2C00F61DE9 /* Main.storyboard in Resources */,
+				F3201D472F343F2C00F61DE9 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3201D252F343F2C00F61DE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3201D462F343F2C00F61DE9 /* Icon.png in Resources */,
+				F3201D482F343F2C00F61DE9 /* Style.css in Resources */,
+				F3201D2D2F343F2C00F61DE9 /* Main.storyboard in Resources */,
+				F3201D4A2F343F2C00F61DE9 /* Script.js in Resources */,
+				F3201D4E2F343F2C00F61DE9 /* Assets.xcassets in Resources */,
+				F3201D442F343F2C00F61DE9 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3201D312F343F2C00F61DE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3201D782F343F2C00F61DE9 /* panel.html in Resources */,
+				F3201D7B2F343F2C00F61DE9 /* browser.js in Resources */,
+				F3201D762F343F2C00F61DE9 /* panel.js in Resources */,
+				F3201D772F343F2C00F61DE9 /* icons in Resources */,
+				F3201D752F343F2C00F61DE9 /* devtools.html in Resources */,
+				F3201D7C2F343F2C00F61DE9 /* panel.css in Resources */,
+				F3201D7A2F343F2C00F61DE9 /* devtools.js in Resources */,
+				F3201D792F343F2C00F61DE9 /* manifest.json in Resources */,
+				F3201D742F343F2C00F61DE9 /* background.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3201D3B2F343F2C00F61DE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3201D6F2F343F2C00F61DE9 /* panel.html in Resources */,
+				F3201D722F343F2C00F61DE9 /* browser.js in Resources */,
+				F3201D6D2F343F2C00F61DE9 /* panel.js in Resources */,
+				F3201D6E2F343F2C00F61DE9 /* icons in Resources */,
+				F3201D6C2F343F2C00F61DE9 /* devtools.html in Resources */,
+				F3201D732F343F2C00F61DE9 /* panel.css in Resources */,
+				F3201D712F343F2C00F61DE9 /* devtools.js in Resources */,
+				F3201D702F343F2C00F61DE9 /* manifest.json in Resources */,
+				F3201D6B2F343F2C00F61DE9 /* background.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3201D112F343F2C00F61DE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3201D4B2F343F2C00F61DE9 /* ViewController.swift in Sources */,
+				F3201D192F343F2C00F61DE9 /* AppDelegate.swift in Sources */,
+				F3201D1B2F343F2C00F61DE9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3201D232F343F2C00F61DE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3201D4C2F343F2C00F61DE9 /* ViewController.swift in Sources */,
+				F3201D2A2F343F2C00F61DE9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3201D2F2F343F2C00F61DE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3201D4F2F343F2C00F61DE9 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3201D392F343F2C00F61DE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3201D502F343F2C00F61DE9 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3201D362F343F2C00F61DE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3201D322F343F2C00F61DE9 /* LookieCookie Extension (iOS) */;
+			targetProxy = F3201D352F343F2C00F61DE9 /* PBXContainerItemProxy */;
+		};
+		F3201D402F343F2C00F61DE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3201D3C2F343F2C00F61DE9 /* LookieCookie Extension (macOS) */;
+			targetProxy = F3201D3F2F343F2C00F61DE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3201D082F343F2B00F61DE9 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3201D092F343F2B00F61DE9 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		F3201D1C2F343F2C00F61DE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3201D1D2F343F2C00F61DE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F3201D1F2F343F2C00F61DE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3201D202F343F2C00F61DE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3201D2B2F343F2C00F61DE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3201D2C2F343F2C00F61DE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3201D512F343F2C00F61DE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3201D522F343F2C00F61DE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F3201D542F343F2C00F61DE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LookieCookie Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.lookiecookie.Extension;
+				PRODUCT_NAME = "LookieCookie Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3201D552F343F2C00F61DE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LookieCookie Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.lookiecookie.Extension;
+				PRODUCT_NAME = "LookieCookie Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3201D582F343F2C00F61DE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LookieCookie;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.lookiecookie;
+				PRODUCT_NAME = LookieCookie;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3201D592F343F2C00F61DE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LookieCookie;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.lookiecookie;
+				PRODUCT_NAME = LookieCookie;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3201D5B2F343F2C00F61DE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LookieCookie Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.lookiecookie.Extension;
+				PRODUCT_NAME = "LookieCookie Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F3201D5C2F343F2C00F61DE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "LookieCookie Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.lookiecookie.Extension;
+				PRODUCT_NAME = "LookieCookie Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F3201D5F2F343F2C00F61DE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LookieCookie;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.lookiecookie;
+				PRODUCT_NAME = LookieCookie;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F3201D602F343F2C00F61DE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = LookieCookie;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.lookiecookie;
+				PRODUCT_NAME = LookieCookie;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3201D052F343F2B00F61DE9 /* Build configuration list for PBXProject "LookieCookie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3201D512F343F2C00F61DE9 /* Debug */,
+				F3201D522F343F2C00F61DE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3201D532F343F2C00F61DE9 /* Build configuration list for PBXNativeTarget "LookieCookie Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3201D542F343F2C00F61DE9 /* Debug */,
+				F3201D552F343F2C00F61DE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3201D572F343F2C00F61DE9 /* Build configuration list for PBXNativeTarget "LookieCookie (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3201D582F343F2C00F61DE9 /* Debug */,
+				F3201D592F343F2C00F61DE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3201D5A2F343F2C00F61DE9 /* Build configuration list for PBXNativeTarget "LookieCookie Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3201D5B2F343F2C00F61DE9 /* Debug */,
+				F3201D5C2F343F2C00F61DE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3201D5E2F343F2C00F61DE9 /* Build configuration list for PBXNativeTarget "LookieCookie (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3201D5F2F343F2C00F61DE9 /* Debug */,
+				F3201D602F343F2C00F61DE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3201D022F343F2B00F61DE9 /* Project object */;
+}

@@ -52,8 +52,12 @@ const scheduleRefresh = () => {
   }
   refreshTimer = setTimeout(() => {
     refresh().catch(() => {
-      renderEmptyList();
-      renderEmptyDetail();
+      // Only clear the list if we have no cached cookies (initial load)
+      // Don't clear an existing list just because refresh failed
+      if (cookiesCache.length === 0) {
+        renderEmptyList();
+        renderEmptyDetail();
+      }
     });
   }, 120);
 };
@@ -793,7 +797,12 @@ runtimeApi.onMessage.addListener((message) => {
       const cachedCookie = cachedIndex >= 0 ? cookiesCache[cachedIndex] : null;
       
       if (cachedCookie) {
-        if (entry?.removed) {
+        // Only treat as removed if entry.removed is explicitly true AND cause indicates actual removal
+        // Firefox can send spurious messages - be strict about what counts as a removal
+        const isActualRemoval = entry?.removed === true && 
+          (entry.cause === "explicit" || entry.cause === "evicted" || entry.cause === "expired");
+        
+        if (isActualRemoval) {
           // Cookie was removed - remove from cache
           cookiesCache.splice(cachedIndex, 1);
           if (key === selectedKey) {
@@ -817,7 +826,7 @@ runtimeApi.onMessage.addListener((message) => {
           }
           renderList(cookiesCache);
         }
-      } else if (entry && !entry.removed) {
+      } else if (entry && entry.removed !== true) {
         // Cookie not in cache but was added/changed - add it to the cache
         const newCookie = {
           key,
